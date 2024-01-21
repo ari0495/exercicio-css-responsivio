@@ -1,0 +1,197 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+.agencia-info {
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;   
+    align-items: center; 
+}
+
+.agencia-info img {
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;    
+    margin-bottom: 10px; 
+}
+
+.agencia-info p {
+    max-width: 80%; 
+    margin: 0 auto; 
+}
+
+.destinos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-top: 2px solid #ccc; 
+    padding-top: 20px; 
+}
+
+.destino {
+    width: 300px;
+    margin: 15px;
+    text-align: center;
+}
+
+.destino img {
+    width: 80%;
+    max-width: 100%; 
+    height: auto;
+    max-height: 200px; 
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.adicionar-carrinho {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.adicionar-carrinho:hover {
+    background-color: #0e160e;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+#p {
+    background-color: #f35959;
+    width: 30%;
+    display: flex;
+    margin-left: 50px;
+    text-decoration: line-through;
+    font-size: 0.70em;    
+    color: #ccc;
+}
+
+.menu {
+    display: flex;
+    padding-bottom: 8px 0;
+
+}
+
+
+/* Estilos para diferentes tamanhos de tela */
+@media screen and (max-width: 640px) {
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        padding: 10px 0;
+        flex-direction: column;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    header li {        
+        clear: both;
+        position: relative;
+        display: block;
+    }
+
+    .agencia-info {
+        flex-direction: column;        
+    }
+
+    .agencia-info h2,
+    .agencia-info p {
+        font-size: 14px;
+    }
+
+    .agencia-info img {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    .botao-menu {
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .botao-menu button{
+        padding: 8px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+    .botao-menu {
+        display: none;
+    }
+
+    .destino {
+        grid-template-columns: repeat(2, 49%);
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .botao-menu {
+        display: none;
+    }
+
+}

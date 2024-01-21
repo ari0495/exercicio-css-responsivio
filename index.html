@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Agência de Viagens</title>
+</head>
+<body>
+    <header>
+        <h1>Agência de Viagens</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#destino">Destinos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="botao-menu">
+            <button type="button">Abrir Menu</button>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="agencia-info">
+            <img src="./imagens/Viagens.jpg" alt="itens de Viagens em cima de um mapa">
+            <div>
+                <h2> 🌍 Descubra o Mundo com a Nossa Agência de Viagens! 🌍</h2><br>
+                <p>Você já sonhou em explorar destinos exóticos, experimentar culturas vibrantes ou simplesmente relaxar em uma praia paradisíaca? Na nossa agência de viagens, tornamos esses sonhos realidade!<br><br>                  
+                Então, o que você está esperando? Entre em contato conosco hoje mesmo e comece a planejar a viagem dos seus sonhos! 🌎✈️</p>
+            </div>
+        </section>
+
+
+        <section class="destinos">
+            <div class="destino" id="destino">
+                <img src="./imagens/Japao.jpg" alt="templo no Japão">
+                <h3>Japão</h3>
+                <p id="p">De R$ 2,999.99</p>
+                <p>Por R$ 2,500.99</p>
+                <button class="adicionar-carrinho">Comprar Passagem</button>
+            </div>
+
+            <div class="destino">
+                <img src="./imagens/Suica.jpg" alt="Lago Suiço">
+                <h3>Suiça</h3>
+                <p id="p">De R$ 2,999.99</p>
+                <p>Por R$ 2,500.99</p>
+                <button class="adicionar-carrinho">Comprar Passagem</button>
+            </div>
+
+            <div class="destino">
+                <img src="./imagens/Savana Africana.jpg" alt="Savana na africa com monte ao fundo">
+                <h3>Savana Africana</h3>
+                <p id="p">De R$ 2,999.99</p>
+                <p>Por R$ 2,500.99</p>
+                <button class="adicionar-carrinho">Comprar Passagem</button>
+            </div>
+
+            <div class="destino">
+                <img src="./imagens/amistedam.jpg" alt="Cidade de amistedam">
+                <h3>Amistedam</h3>
+                <p id="p">De R$ 2,999.99</p>
+                <p>Por R$ 2,500.99</p>
+                <button class="adicionar-carrinho">Comprar Passagem</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sua Agência de Viagens. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.botao-menu button').click(function() {
+                $('.menu').slideToggle();
+            })
+        })
+    </script>
+
+</body>
+</html>
